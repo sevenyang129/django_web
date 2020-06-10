@@ -1,2 +1,2 @@
 # django_web
-我的第一个django项目
+使用django框架去搭建覆盖率平台

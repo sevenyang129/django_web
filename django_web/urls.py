@@ -16,6 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from codecompare import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
+    path('login/',views.login),
+    path('register/',views.register),
+    path('task/',views.task),
+    path('add_task/',views.add_task),
+    path('edit_task/',views.edit_task),
+    path('code_diff/',views.code_diff),
 ]

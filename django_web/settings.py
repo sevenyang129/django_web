@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'codecompare',
+    'bootstrap3'
 ]
 
 MIDDLEWARE = [
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'django_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '111.229.65.252',  #数据库所在服务器的ip地址
-        'PORT': '8306',   #监听端口 默认3306即可
-        'NAME': 'blog',  #新建数据库名
+        'HOST': 'localhost',  #数据库所在服务器的ip地址
+        'PORT': '3306',   #监听端口 默认3306即可
+        'NAME': 'codediff',  #新建数据库名
         'USER': 'root',   #数据库登录名
         'PASSWORD': 'root',   #数据库登录密码
         # 'OPTIONS': {
@@ -127,3 +128,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS=(os.path.join(BASE_DIR,'static'),)
